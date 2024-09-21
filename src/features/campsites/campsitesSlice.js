@@ -52,9 +52,7 @@ export const selectAllCampsites = (state) => {
 // };
 
 export const selectCampsiteById = (id) => (state) => {
-    return state.campsites.campsitesArray.find(
-        (campsite) => campsite.id === parseInt(id)
-    );
+    return state.campsites.campsitesArray.find((campsite) => campsite.id === parseInt(id));
 };
 
 export const selectFeaturedCampsite = (state) => {
